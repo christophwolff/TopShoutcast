@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/app_background_color" >
+
+            <TextView
+                android:id="@+id/tvAppName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/radio_collection"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/app_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/rlTop"
+            android:background="@color/app_background_color" >
+
+            <ImageView
+                android:id="@+id/ivMiddle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic_welcome" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlBottom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/rlMiddle"
+            android:layout_marginTop="5dp"
+            android:background="@color/app_background_color" >
+
+            <TextView
+                android:id="@+id/tvPromoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/welcome_msg"
+                android:textColor="@color/app_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnlisten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPromoText"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:text="@string/listen_now"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/sbVolume"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8065034992429095/5036309160" />
+    </RelativeLayout>
+
+</ScrollView>

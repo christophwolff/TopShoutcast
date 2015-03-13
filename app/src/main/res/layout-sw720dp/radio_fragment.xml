@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rlRadioTop"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/container_drop_shadow_gray_white" >
+
+                <ImageView
+                    android:id="@+id/iv_channelLargeIcon"
+                    android:layout_width="250dp"
+                    android:layout_height="210dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/anothericon"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tvNowListening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toRightOf="@+id/iv_channelLargeIcon"
+                    android:text="playing now..."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/grey_text_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvRadioChannelName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNowListening"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/iv_channelLargeIcon"
+                    android:text="Channel Name"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/grey_text_color"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvBuffering"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/rlRadioTop"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/container_drop_shadow_gray_white"
+                android:gravity="center"
+                android:text="playing..."
+                android:textColor="#0f0"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/bPlayPause"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_below="@+id/tvBuffering"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonstate"
+                android:enabled="true"
+                android:text="Stop"
+                android:textColor="@color/app_color"
+                android:textSize="155sp" />
+
+            <SeekBar
+                android:id="@+id/sbVolume"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bPlayPause"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:progressDrawable="@drawable/seekbarprogress"
+                android:thumb="@drawable/thumbimage" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/sbVolume"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3751982689248670/5897825341" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<resources>
+
+    <string name="app_name">Top Shoutcast</string>
+    <string name="listen_now">Start</string>
+    <string name="welcome_msg">Listen to the best Shoutcast-Radio streams</string>
+    <string name="radio_collection">Top Streams on shoutcast"</string>
+    <string name="nd_title">Top 20 Streams"</string>
+
+    <string-array name="channelsName">
+        <item>New. Music. Unfiltered.\nidobi.com</item>
+        <item>BluePoint Radio - 103.2 FM</item>
+        <item>FM4</item>
+        <item>BLUES RADIO (1.FM TM)</item>
+        <item>Venice Classic Radio Italia</item>
+        <item>181.FM - Kickin Country</item>
+        <item>LOUNGE-RADIO.COM \nswiss made</item>
+        <item>ACOUSTIC FM</item>
+        <item>MOZART RADIO</item>
+        <item>BassDrive</item>
+        <item>Hot 108 Jamz</item>
+        <item>KissFM Romania</item>
+        <item>ABC Lounge</item>
+        <item>ABC Love</item>
+        <item>Blackbeats FM</item>
+    </string-array>
+
+    <string-array name="channelsUrl">
+        <item>http://hobbes.idobi.com:80/</item>
+        <item>http://stream.bluepoint-radio.de:8000/bpr128</item>
+        <item>http://mp3stream1.apasf.apa.at:8000/</item>
+        <item>http://sc8.1.fm:8030</item>
+        <item>http://109.123.116.202:8022</item>
+        <item>http://uplink.duplexfx.com:8130</item>
+        <item>http://live.streamhosting.ch:8080</item>
+        <item>http://streaming.radionomy.com/Acoustic-FM</item>
+        <item>http://listen.radionomy.com/mozartradio</item>
+        <item>http://shouthost.com.17.streams.bassdrive.com:8200</item>
+        <item>http://108.61.30.179:4030</item>
+        <item>http://80.86.106.136:8090</item>
+        <item>http://streaming.radionomy.com/ABC-Lounge</item>
+        <item>http://streaming.radionomy.com/ABC-Love</item>
+        <item>http://stream.blackbeats.fm/</item>
+
+    </string-array>
+
+    <string-array name="channelsGenre">
+        <item>Alternative</item>
+        <item>Top 40</item>
+        <item>Alternative</item>
+        <item>Blues</item>
+        <item>Classic</item>
+        <item>Country</item>
+        <item>Chill</item>
+        <item>Blues</item>
+        <item>Classic</item>
+        <item>Drum and Bass</item>
+        <item>Hip Hop</item>
+        <item>Top 40</item>
+        <item>Chill</item>
+        <item>Ambient</item>
+        <item>RnB and Urban</item>
+
+    </string-array>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/app_background_color" >
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/radio_collection"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/app_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/rlTop"
+        android:background="@color/app_background_color" >
+
+        <ImageView
+            android:id="@+id/ivMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:src="@drawable/ic_welcome" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlMiddle"
+        android:layout_marginTop="5dp"
+        android:background="@color/app_background_color" >
+
+        <TextView
+            android:id="@+id/tvPromoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Get All Bangladeshi FM and Online Radio Station in One Application"
+            android:textColor="@color/app_color"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnlisten"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPromoText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button"
+            android:text="Listen now"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
